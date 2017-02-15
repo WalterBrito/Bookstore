@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Books</h1>
+<h1>
+  Books
+  <h3><%= link_to 'New Book', new_book_path %></h3>
+</h1>
+<!-- <div class='right'>
+  <%= form_tag(books_path, method: :get) do %>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag 'Search', name: nil %>
+  <% end %>
+</div> -->
 
 <table>
   <thead>
@@ -17,13 +26,19 @@
         <td><%= book.title %></td>
         <td><%= book.thoughts %></td>
         <td><%= link_to 'Show', book %></td>
-        <!-- <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr> -->
+      </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+<!-- Pagination -->
+<div class="flickr_pagination">
+  <div class="page_info">
+    <%= page_entries_info @books %>
+  </div>
+  <%= will_paginate @books, :container => false %>
+</div>
 
-<%= link_to 'New Book', new_book_path %>
+<br>

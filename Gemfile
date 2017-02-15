@@ -38,7 +38,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'faker'
 # Populate to populate database
 gem 'populator'
-gem 'nifty-generators'
+# Paginator
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
