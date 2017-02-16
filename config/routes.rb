@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :contacts
+  resources :abouts
   resources :main_pages
   resources :books
   root 'main_pages#index'

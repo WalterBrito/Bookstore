@@ -1,0 +1,18 @@
+// Place all the styles related to the Abouts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Align about text */
+h1 {
+    text-align: center;
+    color:blue;
+}
+
+/* text color */
+p {
+    text-align: justify;
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+    font-size: 100%;
+    // font-style: italic;
+}
