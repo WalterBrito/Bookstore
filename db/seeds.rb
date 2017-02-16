@@ -13,3 +13,11 @@
     thoughts: Faker::Lorem.paragraph
   )
 end
+
+# Populate Post
+100.times do
+  Post.create!(
+    title: Faker::Lorem.word,
+    comment: Faker::Lorem.sentence
+  )
+end
