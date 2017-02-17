@@ -1,20 +1,3 @@
 // Place all the styles related to the MainPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-body {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	background: none;
-}
-
-// Load picture on main page
-.full {
-  // background: url(http://hd.wallpaperswide.com/thumbs/connect-t2.jpg) no-repeat center center fixed;
-	background-image: url(asset-path("the-big-picture.jpg"));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
