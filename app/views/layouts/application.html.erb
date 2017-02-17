@@ -13,6 +13,12 @@
   </head>
 
   <body>
+
+    <div id="wrapper">
+  		<div id="header"></div>
+  		<div id="content"></div>
+  		<div id="footer"></div>
+  	</div>
   <!-- Navigation -->
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -31,11 +37,15 @@
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
+  <!-- Footer / Rodap -->
+  <footer class="navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <p class="copyright text-muted">Copyright &copy; Blog 2017 </p>
+    </div>
+  </footer>
 </nav>
 
     <%= yield %>
-
-    
 
   </body>
 </html>
